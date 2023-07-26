@@ -1,0 +1,41 @@
+
+.tarea-contenedor{
+    width: 48%;
+    margin: 20px auto;
+    min-height: 65px;
+    background-color: #1b1b32;
+    padding: 8px 15px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.tarea-contenedor:nth-child(3n + 1){/*pseudoclase, cada 3 elem se va repetir esa secuencia de color*/
+    background-color: #1b1b32;
+}
+.tarea-contenedor:nth-child(3n + 2){
+    background-color: #5e5e75;
+}
+.tarea-contenedor:nth-child(3n + 3){
+    background-color: #3b3b4f;
+}
+
+.tarea-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    align-items: center;
+    color: white;
+    font-family: Roboto, sans-serif;
+    /*overflow-wrap: anywhere;/*Si el texto es muy largo va ser cortado y va seguir hacia abajo*/
+}
+.tarea-contenedor.completada{
+    background-color: #5a01a7;
+    text-decoration: line-through;
+}
