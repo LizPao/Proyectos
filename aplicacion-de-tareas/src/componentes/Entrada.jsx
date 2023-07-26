@@ -17,7 +17,7 @@ const Entrada = ({ enviarTarea }) =>{
             fecha: new Date(),
             completada: false
         }
-        console.log(mensaje);
+        //console.log(mensaje);
         setInput(' ');
         enviarTarea(mensaje);
     }
@@ -28,7 +28,6 @@ const Entrada = ({ enviarTarea }) =>{
                 <input className='tarea-texto' type="text" name="texto" onChange={manejarCambio} value={input} placeholder='Escribe una tarea...'/>
                 <button className='tarea-btn' type="submit">Agregar Tarea</button>
             </div>
-            
         </form>
     );
 }

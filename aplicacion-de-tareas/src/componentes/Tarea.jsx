@@ -4,7 +4,6 @@ import { AiFillDelete } from 'react-icons/ai'
 
 const Tarea = ({ id, texto, completada, completarTarea, eliminarTarea }) => {
     return (
-        
             <div className={completada ? 'tarea-contenedor completada' : 'tarea-contenedor'}>
                 <div className='tarea-text'>
                     <input onClick={ ()=>completarTarea(id) } type="checkbox" />
@@ -12,7 +11,6 @@ const Tarea = ({ id, texto, completada, completarTarea, eliminarTarea }) => {
                     <AiFillDelete onClick={ ()=>eliminarTarea(id) } size={'1.7rem'}/>
                 </div>
             </div>
-        
     )
 }
 

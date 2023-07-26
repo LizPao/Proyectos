@@ -10,11 +10,10 @@ const ListaTarea = () => {
         if(tarea.texto.trim()){//comprobar que no este vacia
             tarea.texto = tarea.texto.trim();//quito espacios en blanco
             const tareaNueva = [tarea, ...tareas];//agrego a tarea al principio del arreglo
-            console.log(tareaNueva);
+            //console.log(tareaNueva);
             setTareas(tareaNueva);
         }
     }
-
 
     const tareaCompletada = (id) =>{
         const tareaActualizada = tareas.map(tarea => {
@@ -30,7 +29,6 @@ const ListaTarea = () => {
     const tareaEliminar = (id) =>{
         const tareaEliminada = tareas.filter(tarea => tarea.id !== id);
         setTareas(tareaEliminada);
-
     }
 
     return (
@@ -39,12 +37,12 @@ const ListaTarea = () => {
             {
                 tareas.map(tarea => 
                     <Tarea 
-                    key={tarea.id}
-                    id={tarea.id}
-                    texto={tarea.texto}
-                    completada={tarea.completada}
-                    completarTarea={tareaCompletada}
-                    eliminarTarea={tareaEliminar}
+                        key={tarea.id}
+                        id={tarea.id}
+                        texto={tarea.texto}
+                        completada={tarea.completada}
+                        completarTarea={tareaCompletada}
+                        eliminarTarea={tareaEliminar}
                     />
                 )
             }
