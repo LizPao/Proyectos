@@ -1,0 +1,26 @@
+.container-boton{
+    display: inline-block;
+    margin: 20px;
+}
+.btnClic{
+    width: 100px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+.btnReset{
+    width: 100px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
